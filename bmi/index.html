@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="icon" href="imgs/unnamed.png">
+         <!-- ?========> Font Awesome -->
+         <link rel="stylesheet" href="css/all.min.css" />
+         <!-- ?========> Bootstrap -->
+         <link rel="stylesheet" href="css/bootstrap.min.css" />
+         <!-- ?========> Main Style Sheet -->
+         <link rel="stylesheet" href="css/main.css" />
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+         
+</head>
+<body>
+<main class="pt-5 text-white">
+    <div class="container d-flex align-items-center justify-content-center flex-column position-relative">
+        <div class="reset d-flex align-items-center justify-content-center flex-column position-absolute p-1 rounded-3">
+            <i class="fa-solid fa-repeat"></i>
+        </div>
+        <h1 class="text-uppercase text-center">BMI Calculator</h1>
+        <p class="text-center fs-5">Body mass index (BMI) is measure of body fat based on height and weight that applies to adult men and women.</p>
+        <div class="age px-sm-4  d-flex align-items-start justify-content-center flex-column p-2">
+            <h2 class="text-start fs-4">Gender</h2>
+            <div class="choice d-flex align-items-center justify-content-evenly w-100 gap-5 mt-2">
+             <div class="male rounded-2 p-3 py-2 d-flex align-items-center justify-content-center flex-column gap-2">
+                <i class="fa-solid fa-venus fs-1"></i>
+                <h5>Female</h5>
+            </div>
+            <div class="male rounded-2 p-3 py-2 d-flex align-items-center justify-content-center flex-column gap-2">
+                <i class="fa-solid fa-mars fs-1"></i>
+                <h5>Male</h5>
+            </div>   
+            </div>
+
+        </div>
+        <div class="age px-sm-4  d-flex align-items-start justify-content-center flex-column p-2">
+            <h2 class="text-start fs-4">Age</h2>
+            <div class="field w-100">
+                <input type="number" placeholder="ENTER YOUR AGE" class="px-3 py-2 w-100 rounded-2 border-0 shadow " id="age">
+            </div>
+        </div>
+        <div class="age px-sm-4  d-flex align-items-start justify-content-center flex-column p-2">
+            <h2 class="text-start fs-4">Height</h2>
+            <div class="field w-100 d-flex gap-2 align-items-center">
+                <input type="number" placeholder="ENTER YOUR HEIGHT" class="px-3 py-2 w-100 rounded-2 border-0 shadow " id="height">
+                <span class="p-2 fw-bold rounded-2 text-white ">cm</span>
+            </div>
+        </div>
+        <div class="age px-sm-4  d-flex align-items-start justify-content-center flex-column p-2">
+            <h2 class="text-start fs-4">Weight</h2>
+            <div class="field w-100 d-flex gap-2 align-items-center">
+                <input type="number" placeholder="ENTER YOUR WEIGHT" class="px-3 py-2 w-100 rounded-2 border-0 shadow " id="weight">
+                <span class="p-2 fw-bold rounded-2 text-white">kg</span>
+            </div>
+        </div>
+        <button class="mt-4 py-2 fs-3 fw-medium text-uppercase border border-white rounded  " id="calc" type="button">Calculate</button>
+       <span id="message" ></span>
+    </div>
+    
+</main>
+<div class="over d-flex align-items-center justify-content-center flex-column">
+    <div class="circle rounded-circle d-flex align-items-center justify-content-center">
+        <span id="BMI" class="bmi mt-3 p-4 fs-1 text-white fw-semibold">24.34</span>
+    </div>
+   <p class="mt-4 text-white fs-3 text-center px-2">You have a <span id="categoryName"></span> body weight</p>
+    <i class="fa-solid fa-right-from-bracket close fs-2 p-2 rounded-4"></i>
+</div>
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
